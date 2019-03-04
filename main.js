@@ -88,7 +88,7 @@ const studentContainer = document.querySelector("#container")
 const createPassingComponenet = (name, subject, info, className) => {
     return `
     <div class="student">
-        <h1 class="${className}">${name}</h1>
+        <h1 class="xx-large ${className}">${name}</h1>
         <section class="bordered dashed section--padded">${subject}</section>
         <aside class="pushRight">${info}</aside>
     </div>
@@ -103,7 +103,7 @@ for (const student of students) {
             student.name,
             student.score,
             student.subject,
-            "xx-large passing"
+            "passing"
         )
     } else {
         studentContainer.innerHTML += createPassingComponenet(
