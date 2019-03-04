@@ -109,7 +109,8 @@ for (const student of students) {
         studentContainer.innerHTML += createPassingComponenet(
             student.name,
             student.score,
-            student.subject
+            student.subject,
+            "failing"
         )
     }
 }
